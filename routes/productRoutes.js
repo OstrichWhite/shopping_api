@@ -11,7 +11,7 @@ const {
 } = require('../controllers/productController');
 const { protect, restrictTo } = require('../controllers/authController');
 
-const router = express.Router({ mergeParams: true }); // POST|GET /tour/234acd74/Products // POST|GET /Products
+const router = express.Router();
 
 // Protect all routes after this middleware (Needs Log In - Authentication)
 router.use(protect);
